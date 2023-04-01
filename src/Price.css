@@ -1,0 +1,173 @@
+.Price{
+    padding: 60px 20px;
+    position: relative;
+}
+.Price::after{
+    display: block;
+    width:100%;
+    height: 100%;
+    content: "";
+    background-image: url('./musicapp\ resources/fifth\ background.png');
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.price_head{
+    text-align: center;
+    color: #293761;
+    font-size: 22px;
+    font-weight: 900;
+    opacity: 1;
+}
+.price_subhead{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 30px;
+    opacity: 1;
+    color: #6375A9;
+}
+.plan_cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.free_plan, .premium_plan{
+    margin-top:50px ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 12px;
+}
+.plan_type{
+    font-size: 14px;
+    font-weight: 900;
+    color: #6375A9;
+    text-align: center;
+    padding: 20px 0;
+}
+.plan_price{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 900;
+    padding-bottom: 25px;
+    color: #293761;
+}
+.plan_duration{
+    color: #293761;
+    font-size: 14px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+.plan_track, .plan_playlist, .plan_sh, .free_trial, .free_trial2{
+    color: #6379bc;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 35px;
+}
+.free_trial{
+    display: none;
+}
+
+.trynow, .trynow2{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(#69AAFF,#4975F3);
+    color: white;
+    width: 100%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-radius: 36px;
+    transition: opacity 0.5s, background-image 0.4s ;
+    cursor: pointer;
+}
+.trynow:hover{
+    opacity: 0.5;
+}
+.trynow2{
+    background-image: linear-gradient(#CB9DFB, #7367F0);
+}
+.trynow2:hover{
+    background-image: linear-gradient(#CB9DFB, #c967f0);
+    opacity: 0.8;
+}
+
+
+
+
+@media screen and (min-width: 480px){ 
+        .free_plan,
+        .premium_plan {
+            width: 47%;
+        }
+        .free_trial {
+            display: block;
+        }
+}
+
+@media screen and (min-width: 769px) {
+.Price {
+    padding: 80px 20px;
+}
+
+.price_head {
+    font-size: 40px;
+}
+
+.price_subhead {
+    font-size: 16px;
+    padding-top: 40px;
+}
+
+.plan_cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+
+.free_plan,
+.premium_plan {
+    margin-top: 60px;
+    padding: 40px 30px;
+    width: 44%;
+}
+
+.plan_type {
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+.plan_price {
+    font-size: 62px;
+    padding-bottom: 25px;
+}
+
+.plan_duration,
+.plan_track,
+.plan_playlist,
+.plan_sh,
+.free_trial,
+.free_trial2 {
+font-size: 16px;
+    padding-bottom: 35px;
+}
+
+.trynow,
+.trynow2 {
+    padding: 20px;
+}
+}

@@ -1,0 +1,70 @@
+.Review{
+    padding: 40px 0;
+    background-color: #F5F7FF;
+    position: relative;
+    
+}
+.Review::after{
+    display: block;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-image: url('./musicapp\ resources/Cquote1_black.svg');
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.1;
+        position: absolute;
+        z-index: 0;
+        background-size: 30%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+}
+.reviewer{
+        width: 80%;
+        margin: auto;
+}
+.reviewer_name{
+    font-size: 18px;
+    color: #293761;
+    text-align: center;
+    font-weight: 100;
+    padding-top: 20px;
+}
+.reviewer_review{
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 900;
+    text-align: center;
+    padding: 50px 0;
+    color: #293761;
+}
+
+@media screen and (min-width: 480px) {
+
+    .reviewer_name {
+        padding-top: 70px;
+    }
+
+    .reviewer_review {
+        padding-bottom: 100px;
+        
+    }
+}
+
+@media screen and (min-width: 769px) {
+.Review::after {
+        background-size: 18%;
+    }
+.reviewer {
+    width: 70%;
+    margin: auto;
+}
+.reviewer_review {
+    font-size: 29px;
+    line-height: 40px;
+
+}
+}

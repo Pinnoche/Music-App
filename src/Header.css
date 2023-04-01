@@ -1,0 +1,29 @@
+.Header{
+    background-image: url("./musicapp\ resources/landinpage\ background.jpg");
+    background-size: cover;
+    background-position: -50px 20px;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+}
+
+
+
+@media screen and (min-width: 580px) {
+    
+    .Header {
+        background-image: url("./musicapp\ resources/landinpage\ background.jpg");
+        background-size: 120%;
+        background-position: -60px 5px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .Header {
+        background-image: url("./musicapp\ resources/landinpage\ background.jpg");
+        background-size: cover;
+        background-position: 0 -40px;
+        background-repeat: no-repeat;
+    }
+}

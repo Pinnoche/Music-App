@@ -1,0 +1,78 @@
+.slidershow{
+    background-image: url('./musicapp\ resources/third\ background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 60px;
+}
+.slide_head{
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    width: 80%;
+    margin: auto;
+    color: #293761;
+}
+
+.playstore2,
+.appstore2 {
+    display: block;
+    width: 35%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.appstore2 {
+    padding: 20px 0;
+}
+
+
+
+
+@media screen and (min-width: 480px) {
+    .slidershow {
+            background-image: url('./musicapp\ resources/third\ background.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-bottom: 0px;
+        }
+
+        .slide_head {
+            font-size: 30px;
+        }
+        .download2{
+            width: 56%;
+        }
+        .playstore2,
+        .appstore2 {
+            display: block;
+            width: 43%;
+            margin: auto;
+            cursor: pointer;
+        }
+}
+
+
+
+@media screen and (min-width: 769px) {
+    .slidershow{
+        padding-bottom: 60px;
+    }
+    .slide_head {
+            font-size: 46px;
+            font-weight: 900;
+        }
+    .download2{
+        margin: auto;
+        width: 35%;
+    }
+         .playstore2,
+         .appstore2 {
+             display: block;
+             width: 40%;
+             margin: auto;
+             cursor: pointer;
+         }
+}

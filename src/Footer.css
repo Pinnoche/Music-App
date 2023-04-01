@@ -1,0 +1,171 @@
+.footer{
+    padding: 50px 20px;
+    background-color: #293761;
+    color: white;
+}
+.footer_menu, .footer_social{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.logo_cont, .footer_download{
+    width: 100%;
+    padding: 10px 0;
+}
+.footer_logo{
+    display: block;
+margin: 10px 0;
+width: 20%;
+margin: auto;
+cursor: pointer;
+}
+.web{
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px 0;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.footeritem_cont, .social{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 65%;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+.footeritem{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    padding: 20px 0;
+    cursor: pointer;
+    transform: color 0.8s, padding 0.8s;
+}
+.footeritem:hover{
+    color: rgba(221, 221, 221, 0.76);
+    padding-top: 23px;
+}
+.footer_social{
+    margin-top: 70px;
+
+}
+.footer_download{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.playstore3, .appstore3{
+    width: 46%;
+    padding: 3px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.social{
+    width: 35%;
+    margin: auto;
+}
+.social_icon{
+    padding: 5px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #d168fa, #9d43fd);
+    cursor: pointer;
+}
+.copyright{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 50px;
+}
+
+
+
+
+@media screen and (min-width: 480px) {
+    .footer_menu,
+        .footer_social {
+        width: 60%;
+        margin: auto;
+        }
+}
+
+
+
+
+@media screen and (min-width: 769px) {
+    /* .footer {
+            padding: 50px 20px;
+            background-color: #293761;
+            color: white;
+        } */
+    
+        .footer_menu,
+        .footer_social {
+            padding: 15px 30px;
+            width: 90%;
+            margin: auto;
+        }
+    
+        .logo_cont, .footer_download {
+            width: 25%;
+            padding: 10px 0;
+        }
+    
+        .footer_logo {
+            width: 35%;
+        }
+    
+        .web {
+            font-size: 16px;
+        }
+    
+        .footeritem_cont,
+        .social {
+            width: 25%;
+            margin: 0 0;
+    
+        }
+    
+        .footeritem {
+            font-size: 20px;
+            padding: 20px 0;
+        }
+    
+        .footer_social {
+            margin-top: 0px;
+    
+        }
+    
+        .footer_download {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 30%;
+            margin-bottom: 0px;
+        }
+    
+        .playstore3,
+        .appstore3 {
+            width: 50%;
+
+        }
+    
+        .social {
+            width: 12%;
+            margin: 0 0;
+        }
+    
+        .social_icon {
+            margin-right: 6px;
+        }
+    
+        .copyright {
+            font-size: 16px;
+        }
+}

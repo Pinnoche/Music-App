@@ -1,0 +1,81 @@
+.main_slider{
+    position: relative;
+}
+.slider_contain{
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    
+}
+.sliderimage{
+    width: 60%;
+    border-radius: 32px;
+    margin: auto;
+    display: block;
+}
+.active_sliderimage{
+    width:71%;
+    overflow-y: visible !important;
+}
+
+.notactive{
+    margin-top: 11%;
+}
+
+.phoneimg{
+    border-radius: 32px;
+    width: 74.5%;
+    height: 101%;
+    border: 6px solid #293761;
+    position: absolute;
+    left: 12.5%;
+    z-index: 10;
+    top: 0;
+}
+.iphone_feat{
+    width: 57%;
+    margin: auto;
+    border: 10px solid #293761;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+
+
+
+@media screen and (min-width: 480px) {
+        .active_sliderimage {
+            width: 45%;
+        }
+
+
+
+    .phoneimg {
+            width: 47%;
+            height: 70%;
+            border: 7px solid #293761;
+            position: absolute;
+            left: 26.5%;
+            z-index: 10;
+            top: 0;
+        }
+    
+}
+
+
+
+
+@media screen and (min-width: 769px) {
+    .active_sliderimage {
+            width: 70%;
+        }
+.phoneimg {
+        border: 6px solid #293761;
+        width: 24%;
+        height: 100.3%;
+        left: 38%;
+        
+    }
+
+    }

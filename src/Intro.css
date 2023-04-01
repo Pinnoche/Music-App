@@ -1,0 +1,210 @@
+.container {
+    background-color: #fbfcff;
+}
+
+.explore {
+    margin: 40px 0;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfcff;
+    padding-left: 18px;
+    position: relative;
+
+}
+
+
+
+.image1 {
+    display: block;
+    width: 50%;
+    border-radius: 24px;
+    z-index: 2;
+    border: 6px solid #293761;
+    position: relative;
+}
+
+.image2 {
+    width: 43%;
+    border-radius: 18px;
+    position: relative;
+    left: -16px;
+}
+
+.explore_content {
+    background-color: #fbfcff;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    color: #293761;
+
+}
+
+.header {
+    padding-bottom: 16px;
+    line-height: 28px;
+    font-size: 18px;
+
+}
+
+.content1 {
+    padding-bottom: 16px;
+    line-height: 18px;
+    font-size: 13px;
+}
+
+.download {
+    padding-bottom: 40px;
+}
+
+.playstore,
+.appstore {
+    display: block;
+    width: 35%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.appstore {
+    padding: 20px 0;
+}
+
+
+
+
+
+@media screen and (min-width: 480px) {
+    .explore {
+        padding-bottom: 20px;
+    }
+
+    .image1 {
+        width: 30%;
+    }
+
+    .image2 {
+        width: 26%;
+        left: -18px;
+    }
+
+    .explore_content {
+        width: 57%;
+    }
+
+    .header {
+        line-height: 32px;
+        font-size: 18px;
+
+    }
+
+    .content1 {
+        line-height: 22px;
+        font-size: 14px;
+    }
+
+    .download {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        padding-bottom: 50px;
+        justify-content: center;
+        margin: auto;
+        padding-top: 10px;
+
+    }
+
+    .playstore,
+    .appstore {
+        display: block;
+        width: 38%;
+    }
+
+    .appstore {
+        padding: 0 0;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width: 769px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 80px;
+    }
+
+    .explore {
+        width: 50%;
+        padding-bottom: 20px;
+    }
+
+    .explore2 {
+        width: 48%;
+        height: 40%;
+        margin: auto;
+        margin-top: 22%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image1 {
+        width: 45%;
+        border-radius: 32px;
+    }
+
+    .image2 {
+        width: 38%;
+        left: -18px;
+        border-radius: 26px;
+    }
+
+    .explore_content {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .header {
+        line-height: 20px;
+        font-size: 28px;
+        padding-bottom: 40px;
+
+    }
+
+    .content1 {
+        line-height: 22px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #6375A9;
+    }
+
+    .download {
+        width: 100%;
+        padding-bottom: 50px;
+        justify-content: left;
+        margin: 0;
+        padding-top: 10px;
+        margin-top: 10px;
+
+    }
+
+    .playstore,
+    .appstore {
+        display: block;
+        width: 28%;
+        margin: 0;
+    }
+
+    .appstore {
+        margin-left: 30px;
+    }
+
+}

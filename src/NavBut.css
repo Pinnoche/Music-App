@@ -1,0 +1,44 @@
+.navbut_cont{
+    background: none;
+    border: none;
+    z-index: 10;
+}
+.prev{
+    position: absolute;
+    top: 50%;
+}
+.next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.navbut{
+    background-color: #997ef5;
+    color: white;
+    border-radius: 50%;
+    border: none;
+}
+
+
+
+@media screen and (min-width: 480px) {
+.prev {
+        position: absolute;
+        top: 35%;
+    }
+
+    .next {
+        position: absolute;
+        top: 35%;
+        right: 0;
+    }
+}
+
+
+
+
+@media screen and (min-width: 769px) {
+    .prev, .next {
+        top: 50%;
+    }
+}
