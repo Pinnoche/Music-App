@@ -37,6 +37,7 @@
     width: 100vw;
     background-color: rgb(245, 247, 255);
     z-index: 200;
+    position: fixed;
 }
 
 .menuitem {
