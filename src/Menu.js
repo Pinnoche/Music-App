@@ -7,7 +7,14 @@ function Menu(props) {
     window.onscroll = () => {
         let container = document.querySelector(".logo_container");
         let logo = document.querySelector(":root");
+              let backtotop = document.querySelector(".backtotop");
         
+
+        if (document.body.scrollTop >= 500 || document.documentElement.scrollTop >= 500 || window.scrollY >= 500) {
+            backtotop.style.display = "block"; 
+        } else {
+            backtotop.style.display = "none";
+            }
 
         if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50 || window.scrollY >= 50) {
             container.style.background = "#F5F7FF"; 

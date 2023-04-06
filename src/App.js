@@ -1,9 +1,11 @@
 import './App.css';
+import Backtotop from './Backtotop';
 import Explore from './Explore';
 import Footer from './Footer';
 import Header from './Header';
 import Price from './Price';
 import Review from './Review';
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
       <Price />
       <Review />
       <Footer />
+      <Backtotop />
     </div>
   );
 }
