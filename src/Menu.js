@@ -63,6 +63,35 @@ function Menu(props) {
         }
 
     }
+   const Exploreview = () => {
+        let menubar = document.querySelector(".menuitem_cont");
+        menubar.style.display = "none"
+        let exploreview = document.querySelector('.main_explore');
+        exploreview.scrollIntoView({
+            behavior:'smooth'
+        })
+
+    }
+  const Priceview = () => {
+        let menubar = document.querySelector(".menuitem_cont");
+        menubar.style.display = "none"
+        let priceview = document.querySelector('.Price');
+        priceview.scrollIntoView({
+            behavior:'smooth'
+        })
+
+    }
+
+     const Reviewview = () => {
+        let menubar = document.querySelector(".menuitem_cont");
+            menubar.style.display = "none"
+        let reviewview = document.querySelector('.Review');
+        reviewview.scrollIntoView({
+            behavior:'smooth'
+        })
+
+    }
+
 
     return (
         <div>
@@ -70,16 +99,16 @@ function Menu(props) {
                 <img className='logo' src={Logo} alt="" />
                 <MenuIcon onClick={dropmenu} className='icon' />
                  <div className="menuitem_contpc">
-                    <p className="menuitem">Explore</p>
-                    <p className="menuitem">Pricing</p>
-                    <p className="menuitem">Review</p>
+                    <p className="menuitem" onClick={Exploreview}>Explore</p>
+                    <p className="menuitem" onClick={Priceview}>Pricing</p>
+                    <p className="menuitem" onClick={Reviewview}>Review</p>
                 </div>
             </div>
             <div className="menuitem_cont">
                     <CloseIcon onClick={dropmenu} className='close_icon' />
-                    <p className="menuitem">Explore</p>
-                    <p className="menuitem">Pricing</p>
-                    <p className="menuitem">Review</p>
+                    <p className="menuitem" onClick={Exploreview}>Explore</p>
+                    <p className="menuitem" onClick={Priceview}>Pricing</p>
+                    <p className="menuitem" onClick={Reviewview}>Review</p>
             </div>
         </div>
     );

@@ -8,6 +8,35 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
 function Footer(props) {
+    
+    const Exploreview = () => {
+        let menubar = document.querySelector(".menuitem_cont");
+        menubar.style.display = "none"
+        let exploreview = document.querySelector('.main_explore');
+        exploreview.scrollIntoView({
+            behavior:'smooth'
+        })
+
+    }
+    const Priceview = () => {
+        let menubar = document.querySelector(".menuitem_cont");
+        menubar.style.display = "none"
+        let priceview = document.querySelector('.Price');
+        priceview.scrollIntoView({
+            behavior:'smooth'
+        })
+
+    }
+
+    const Reviewview = () => {
+        let menubar = document.querySelector(".menuitem_cont");
+            menubar.style.display = "none"
+        let reviewview = document.querySelector('.Review');
+        reviewview.scrollIntoView({
+            behavior:'smooth'
+        })
+
+    }
     return (
         <div className='footer'>
             <div className="footer_menu">
@@ -18,9 +47,9 @@ function Footer(props) {
                     </p>
                 </div>
                  <div className="footeritem_cont">
-                    <p className="footeritem">Explore</p>
-                    <p className="footeritem">Pricing</p>
-                    <p className="footeritem">Review</p>
+                    <p className="footeritem" onClick={Exploreview}>Explore</p>
+                    <p className="footeritem" onClick={Priceview}>Pricing</p>
+                    <p className="footeritem"onClick={Reviewview}>Review</p>
                 </div>
             </div>
             <div className="footer_social">
