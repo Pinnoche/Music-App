@@ -3,6 +3,37 @@ import CloseIcon from '@mui/icons-material/Close';
 import Logo from './musicapp resources/musicapp logo.png'
 import './Menu.css';
 
+
+export const Exploreview = () => {
+        let menubar = document.querySelector(".menuitem_cont");
+        menubar.style.display = "none"
+        let exploreview = document.querySelector('.main_explore');
+        exploreview.scrollIntoView({
+            behavior:'smooth'
+        })
+
+    }
+export const Priceview = () => {
+        let menubar = document.querySelector(".menuitem_cont");
+        menubar.style.display = "none"
+        let priceview = document.querySelector('.Price');
+        priceview.scrollIntoView({
+            behavior:'smooth'
+        })
+
+    }
+
+export const Reviewview = () => {
+        let menubar = document.querySelector(".menuitem_cont");
+            menubar.style.display = "none"
+        let reviewview = document.querySelector('.Review');
+        reviewview.scrollIntoView({
+            behavior:'smooth'
+        })
+
+    }
+
+
 function Menu(props) {
     window.onscroll = () => {
         let container = document.querySelector(".logo_container");
@@ -54,7 +85,7 @@ function Menu(props) {
             }
      }
         
-    const dropmenu = () => {
+     const dropmenu = () => {
         let menubar = document.querySelector(".menuitem_cont");
         if (menubar.style.display === "block") {
             menubar.style.display = "none"
@@ -63,35 +94,7 @@ function Menu(props) {
         }
 
     }
-   const Exploreview = () => {
-        let menubar = document.querySelector(".menuitem_cont");
-        menubar.style.display = "none"
-        let exploreview = document.querySelector('.main_explore');
-        exploreview.scrollIntoView({
-            behavior:'smooth'
-        })
-
-    }
-  const Priceview = () => {
-        let menubar = document.querySelector(".menuitem_cont");
-        menubar.style.display = "none"
-        let priceview = document.querySelector('.Price');
-        priceview.scrollIntoView({
-            behavior:'smooth'
-        })
-
-    }
-
-     const Reviewview = () => {
-        let menubar = document.querySelector(".menuitem_cont");
-            menubar.style.display = "none"
-        let reviewview = document.querySelector('.Review');
-        reviewview.scrollIntoView({
-            behavior:'smooth'
-        })
-
-    }
-
+    
 
     return (
         <div>
